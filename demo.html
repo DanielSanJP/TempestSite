@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/Tempest Logo 1.png" type="image/x-icon">
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> <!--load all styles -->
+    <title>Tempest</title>
+</head>
+
+<body>
+    <nav>
+        <li><a href="index.html"><img class="logo" src="images/Tempest Logo 1.png" alt=""></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="company.html">Company Details</a></li>
+        <li><a href="competition.html">Our Competition</a></li>
+        <li><a href="strategy.html">Market Strategy</a></li>
+        <li><a href="ProblemsSolution.html">Problems and Solutions</a></li>
+        <li><a href="demo.html">Space Simulation</a></li>
+    </nav>
+    <div class="container">
+
+        <div class="demo">
+            <h1>Spacecraft Simulation</h1>
+            <div class="userSect">
+                <h2>Spacecraft Values</h2>
+                <div>
+                    <label for="mass">Craft Mass (kg):</label>
+                    </div>
+                    <div>
+                    <input type="number" id="mass" placeholder="Enter mass in kg">
+                </div>
+
+                <div>
+                    <label for="thrust">Thrust Force (Newtons):</label>
+                </div>
+                <div>
+                    <input type="number" id="thrust" placeholder="Enter thrust in N">
+                </div>
+
+                <div>
+                    <label for="distance">Distance (km):</label>
+                    </div>
+                    <div>
+                    <input type="number" id="distance" placeholder="Enter distance in km">
+                </div>
+                <div>
+                    <button class="simBtn" onclick="startSimulation()">Start Simulation</button>
+                    <button class="simBtn" onclick="stopSimulation()">Stop Simulation</button>
+                </div>
+            </div>
+
+
+            <div id="simulationOutput">
+                <h1>Spacecraft Simulation Progression</h1>
+                <p>Acceleration (m/s²): <span id="acceleration"></span></p>
+                <p>Seconds: <span id="seconds">0</span></p>
+                <p>Minutes: <span id="minutes">0</span></p>
+                <p>Hours: <span id="hours">0</span></p>
+                <p>Meters per second: <span id="metersPerSecond">0</span></p>
+                <p>Kilometers per hour: <span id="kilometersPerHour">0</span></p>
+                <p>Total Distance Travelled (km): <span id="totalDistance">0</span></p>
+            </div>
+
+
+        </div>
+
+        <footer>
+            <img class="icon" src="images/figma.png" alt="" width="50px">
+            <div class="socials">
+                <img class="icon" src="images/twitter-alt.png" alt="" width="30px">
+                <img class="icon" src="images/instagram.png" alt="" width="30px">
+                <img class="icon" src="images/youtube.png" alt="" width="30px">
+                <img class="icon" src="images/linkedin.png" alt="" width="30px">
+            </div>
+            <h2>Explore</h2>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company.html">Company Details</a></li>
+            <li><a href="competition.html">Our Competition</a></li>
+            <li><a href="strategy.html">Market Strategy</a></li>
+            <li><a href="ProblemsSolution.html">Problems and Solutions</a></li>
+            <li><a href="demo.html">Space Simulation</a></li>
+            <li><a href="satellite.html">Our Satellite</a></li>
+        </footer>
+
+
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
