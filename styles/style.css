@@ -6,6 +6,12 @@ body {
     align-items: center;
     margin: auto;
     margin-bottom: 50px;
+
+    background-image: url("../images/background.webp");
+    background-size: cover; /* Makes the background cover the entire screen */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-attachment: fixed; /* Keeps the background fixed in place when scrolling */
 }
 
 nav {
@@ -19,6 +25,9 @@ nav {
     font-size: 20px;
     text-align: center;
     width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .docImg {
@@ -63,6 +72,14 @@ h1 {
     font-size: 36px;
 }
 
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
 p {
     font-size: 24px;
 }
@@ -77,6 +94,7 @@ p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
     border-radius: 20px;
+    background-color: white;
 }
 
 .imagebox {
@@ -88,6 +106,7 @@ p {
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     border-radius: 10px;
+    background-color: white;
 }
 
 
@@ -97,6 +116,10 @@ footer {
     text-align: left;
     list-style-type: none;
     gap: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 footer>li>a {
@@ -164,6 +187,7 @@ footer>li>a:hover {
     padding: 20px;
     border-radius: 20px;
     width: 90%;
+    background-color: white;
 }
 
 input {
@@ -178,12 +202,12 @@ button {
     cursor: pointer;
     border-radius: 10px;
     border: none;
-    background-color: #d6d6d6;
+    background-color: #8b8b8b;
+    color: white;
 }
 
 button:hover {
     background-color: #A6CC37;
-    color: white;
     transform: scale(0.95);
     transition: 0.3s;
 }
@@ -192,6 +216,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .userSect {
@@ -202,9 +227,10 @@ button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
     border-radius: 20px;
+    background-color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
     nav {
         flex-direction: column;
         align-items: center;
